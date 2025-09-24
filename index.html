@@ -3,168 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RoomMatch - Micro-Coliving Juvenil</title>
+  <title>RoomMatch - Encuentra tu lugar ideal</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Poppins', sans-serif; }
-    h1,h2,h3 { font-family: 'Roboto', sans-serif; }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+    }
   </style>
 </head>
-<body class="text-gray-800 bg-gray-50">
+<body class="bg-gray-50 text-gray-800">
 
-  <!-- NAV -->
-  <nav class="bg-white shadow fixed top-0 w-full z-20">
-    <div class="container mx-auto flex justify-between items-center px-6 py-4">
-      <h1 class="text-2xl font-bold text-blue-600">RoomMatch</h1>
-      <ul class="flex gap-6 text-gray-700 font-medium">
-        <li><a href="#registro" class="hover:text-blue-600">Registrarse</a></li>
-        <li><a href="#descubre" class="hover:text-blue-600">Descubre</a></li>
-        <li><a href="#match" class="hover:text-blue-600">Match</a></li>
-        <li><a href="#vive" class="hover:text-blue-600">Vive</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="relative bg-gradient-to-r from-blue-700 to-blue-500 text-white pt-32 pb-24">
-    <div class="container mx-auto text-center px-6">
-      <h1 class="text-5xl font-bold mb-6">Encuentra tu espacio, comparte tu vida</h1>
-      <p class="text-lg mb-8">La plataforma de <strong>micro-coliving juvenil</strong> con contratos flexibles y compañeros compatibles gracias a IA.</p>
-      <a href="#registro" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-3 rounded-lg shadow-md transition">Comienza ahora</a>
-    </div>
-    <div class="flex justify-center gap-6 mt-12 px-6">
-      <img src="una-pareja-joven-sonriendo-feliz-jugando-usando-una-caja-de-carton-como-auto-en-un-nuevo-hogar.jpg" alt="Hero Img 1" class="w-64 h-40 object-cover rounded-xl shadow-lg">
-      <img src="reunion-de-pareja-de-relacion-larga-distancia.jpg" alt="Hero Img 2" class="w-64 h-40 object-cover rounded-xl shadow-lg">
+  <!-- Hero -->
+  <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('R.jfif');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10 text-center text-white px-6">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">Bienvenido a RoomMatch</h1>
+      <p class="text-lg md:text-2xl mb-6">La forma inteligente de independizarte y encontrar tu hogar ideal</p>
+      <a href="#registrarse" class="px-6 py-3 bg-yellow-500 text-black font-semibold rounded-xl hover:bg-yellow-400 transition">Comienza ahora</a>
     </div>
   </section>
 
-  <!-- REGISTRO -->
-  <section id="registro" class="py-20 bg-white">
-    <div class="container mx-auto px-6 max-w-3xl">
-      <h2 class="text-3xl font-bold text-center mb-12">Regístrate en RoomMatch</h2>
-      <form class="bg-gray-50 p-8 rounded-xl shadow-lg space-y-6">
-        <div>
-          <label class="block font-medium mb-2">Nombre completo</label>
-          <input type="text" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500">
+  <!-- Sección Descubre Viviendas -->
+  <section id="descubre" class="py-16 px-6 max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">Descubre habitaciones disponibles</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- Madrid -->
+      <div class="bg-white shadow-lg rounded-2xl overflow-hidden">
+        <img src="1693935672signal-2023-09-04-144708_003.jpeg" alt="Habitación en Madrid" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Habitación en Madrid</h3>
+          <p class="mb-4">Luminoso cuarto en el centro de Madrid, ideal para jóvenes trabajadores o estudiantes.</p>
+          <p class="text-yellow-500">★★★★★ (32 reseñas)</p>
         </div>
-        <div>
-          <label class="block font-medium mb-2">Email</label>
-          <input type="email" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500">
+      </div>
+
+      <!-- Valencia -->
+      <div class="bg-white shadow-lg rounded-2xl overflow-hidden">
+        <img src="una-pareja-joven-sonriendo-feliz-jugando-usando-una-caja-de-carton-como-auto-en-un-nuevo-hogar.jpg" alt="Habitación en Valencia" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Habitación en Valencia</h3>
+          <p class="mb-4">Cómoda habitación con escritorio y balcón, cerca de universidades y transporte público.</p>
+          <p class="text-yellow-500">★★★★☆ (21 reseñas)</p>
         </div>
-        <div>
-          <label class="block font-medium mb-2">Ciudad</label>
-          <input type="text" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500">
+      </div>
+
+      <!-- Barcelona -->
+      <div class="bg-white shadow-lg rounded-2xl overflow-hidden">
+        <img src="reunion-de-pareja-de-relacion-larga-distancia.jpg" alt="Habitación en Barcelona" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Habitación en Barcelona</h3>
+          <p class="mb-4">Espacio moderno en el corazón de Barcelona, perfecto para quienes buscan comunidad.</p>
+          <p class="text-yellow-500">★★★★★ (45 reseñas)</p>
         </div>
-        <div>
-          <label class="block font-medium mb-2">Preferencias de convivencia</label>
-          <select class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500">
-            <option>Ambiente tranquilo</option>
-            <option>Ambiente social</option>
-            <option>Indiferente</option>
-          </select>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sección Match -->
+  <section id="match" class="bg-yellow-50 py-16 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <img src="una-pareja-joven-sonriendo-feliz-jugando-usando-una-caja-de-carton-como-auto-en-un-nuevo-hogar.jpg" alt="Conoce a tus futuros compañeros" class="rounded-2xl shadow-lg">
+      <div>
+        <h2 class="text-3xl font-bold mb-6">Haz Match con compañeros afines</h2>
+        <p class="mb-4">Encuentra a personas que comparten tus intereses, estilo de vida y objetivos para que tu experiencia de convivencia sea más positiva.</p>
+        
+        <!-- Listado de anfitriones -->
+        <div class="space-y-4">
+          <div class="p-4 bg-white rounded-lg shadow-md">
+            <p class="font-semibold">Laura - <span class="text-yellow-500">★★★★★</span></p>
+            <p class="text-sm text-gray-600">Amante de la cocina y los viajes.</p>
+          </div>
+          <div class="p-4 bg-white rounded-lg shadow-md">
+            <p class="font-semibold">Carlos - <span class="text-yellow-500">★★★★☆</span></p>
+            <p class="text-sm text-gray-600">Le gusta el deporte y la lectura.</p>
+          </div>
+          <div class="p-4 bg-white rounded-lg shadow-md">
+            <p class="font-semibold">María - <span class="text-yellow-500">★★★☆☆</span></p>
+            <p class="text-sm text-gray-600">Trabaja en remoto, tranquila y organizada.</p>
+          </div>
+          <div class="p-4 bg-white rounded-lg shadow-md">
+            <p class="font-semibold">Javier - <span class="text-yellow-500">★★★★★</span></p>
+            <p class="text-sm text-gray-600">Extrovertido, disfruta de la música en vivo.</p>
+          </div>
         </div>
-        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700">Enviar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Vive -->
+  <section id="vive" class="py-16 px-6 max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">Vive experiencias únicas</h2>
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <img src="1693935672signal-2023-09-04-144708_003.jpeg" alt="Disfruta de tu nuevo hogar" class="rounded-2xl shadow-md">
+      <div>
+        <p class="text-lg mb-6">Con RoomMatch no solo encuentras dónde vivir, sino también con quién compartirlo. Fomenta relaciones auténticas y disfruta de una comunidad vibrante.</p>
+        <a href="#registrarse" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-500 transition">Únete ahora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Registro -->
+  <section id="registrarse" class="bg-gray-100 py-16 px-6">
+    <div class="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
+      <h2 class="text-3xl font-bold mb-6 text-center">Regístrate</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Nombre completo" class="w-full p-3 border rounded-lg">
+        <input type="email" placeholder="Correo electrónico" class="w-full p-3 border rounded-lg">
+        <input type="password" placeholder="Contraseña" class="w-full p-3 border rounded-lg">
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-500">Crear cuenta</button>
       </form>
+      <p class="mt-4 text-center text-sm text-gray-600">¿Dudas? Escríbenos a <a href="mailto:roommatch@roommatch.es" class="text-blue-600">roommatch@roommatch.es</a></p>
     </div>
   </section>
 
-  <!-- DESCUBRE -->
-  <section id="descubre" class="py-20 bg-gray-100">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12">Descubre habitaciones y anfitriones</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white rounded-xl shadow-md overflow-hidden">
-          <img src="una-pareja-joven-sonriendo-feliz-jugando-usando-una-caja-de-carton-como-auto-en-un-nuevo-hogar.jpg" class="w-full h-48 object-cover" alt="Habitación 1">
-          <div class="p-6">
-            <h3 class="font-semibold text-xl mb-2">Habitación en Madrid Centro</h3>
-            <p class="text-gray-600">€450/mes · Con Laura (24 años, estudiante de diseño)</p>
-            <p class="text-yellow-500 mt-2">⭐⭐⭐⭐☆ (42 reseñas)</p>
-          </div>
-        </div>
-        <div class="bg-white rounded-xl shadow-md overflow-hidden">
-          <img src="reunion-de-pareja-de-relacion-larga-distancia.jpg" class="w-full h-48 object-cover" alt="Habitación 2">
-          <div class="p-6">
-            <h3 class="font-semibold text-xl mb-2">Habitación en Barcelona</h3>
-            <p class="text-gray-600">€500/mes · Con Diego (27 años, programador junior)</p>
-            <p class="text-yellow-500 mt-2">⭐⭐⭐⭐⭐ (65 reseñas)</p>
-          </div>
-        </div>
-        <div class="bg-white rounded-xl shadow-md overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" class="w-full h-48 object-cover" alt="Habitación 3">
-          <div class="p-6">
-            <h3 class="font-semibold text-xl mb-2">Habitación en Valencia</h3>
-            <p class="text-gray-600">€400/mes · Con Sofía (22 años, estudiante Erasmus)</p>
-            <p class="text-yellow-500 mt-2">⭐⭐⭐⭐ (30 reseñas)</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- LISTADO DE ANFITRIONES -->
-      <div class="mt-12">
-        <h3 class="text-2xl font-semibold mb-6">Algunos anfitriones destacados</h3>
-        <ul class="space-y-4">
-          <li class="bg-white p-4 rounded-lg shadow flex justify-between items-center">
-            <span><strong>Laura</strong> (Madrid) - Estudiante de diseño</span>
-            <span class="text-yellow-500">⭐⭐⭐⭐☆</span>
-          </li>
-          <li class="bg-white p-4 rounded-lg shadow flex justify-between items-center">
-            <span><strong>Diego</strong> (Barcelona) - Programador junior</span>
-            <span class="text-yellow-500">⭐⭐⭐⭐⭐</span>
-          </li>
-          <li class="bg-white p-4 rounded-lg shadow flex justify-between items-center">
-            <span><strong>Sofía</strong> (Valencia) - Estudiante Erasmus</span>
-            <span class="text-yellow-500">⭐⭐⭐⭐</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- MATCH -->
-  <section id="match" class="py-20 bg-white">
-    <div class="container mx-auto px-6 max-w-4xl text-center">
-      <h2 class="text-3xl font-bold mb-12">Nuestro algoritmo de compatibilidad</h2>
-      <p class="text-lg mb-8">Gracias a IA, RoomMatch analiza tus hábitos, rutinas y preferencias para recomendarte compañeros de piso con los que realmente encajarás.</p>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="p-6 bg-blue-50 rounded-xl shadow">
-          <h3 class="font-semibold mb-2">Rutinas diarias</h3>
-          <p>¿Eres nocturno o madrugador? La IA lo tiene en cuenta.</p>
-        </div>
-        <div class="p-6 bg-yellow-50 rounded-xl shadow">
-          <h3 class="font-semibold mb-2">Estilo de vida</h3>
-          <p>Ambiente tranquilo o social, para que vivas en armonía.</p>
-        </div>
-        <div class="p-6 bg-green-50 rounded-xl shadow">
-          <h3 class="font-semibold mb-2">Preferencias personales</h3>
-          <p>Compatibilidad en hobbies, música, limpieza y más.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- VIVE -->
-  <section id="vive" class="py-20 bg-gray-100">
-    <div class="container mx-auto px-6 text-center max-w-4xl">
-      <h2 class="text-3xl font-bold mb-12">Vive la experiencia RoomMatch</h2>
-      <p class="text-lg mb-6">No es solo alquilar una habitación, es comenzar una nueva etapa en comunidad, con apoyo y flexibilidad. Disfruta de tu independencia sin renunciar a la seguridad y al compañerismo.</p>
-      <img src="una-pareja-joven-sonriendo-feliz-jugando-usando-una-caja-de-carton-como-auto-en-un-nuevo-hogar.jpg" alt="Experiencia RoomMatch" class="mx-auto rounded-xl shadow-lg mt-8 w-96">
-      <a href="#registro" class="mt-10 inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-3 rounded-lg shadow-md transition">Regístrate ahora</a>
-    </div>
-  </section>
-
-  <!-- CONTACTO -->
-  <section class="py-16 bg-blue-700 text-white">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-6">¿Tienes dudas?</h2>
-      <p class="mb-6">Contáctanos directamente por email.</p>
-      <p class="text-lg">📧 <a href="mailto:roommatch@roommatch.es" class="text-yellow-300 font-semibold hover:underline">roommatch@roommatch.es</a></p>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-gray-800 text-gray-400 py-6 text-center text-sm">
-    <p>&copy; 2025 RoomMatch. Todos los derechos reservados.</p>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8 text-center">
+    <p>© 2025 RoomMatch. Todos los derechos reservados.</p>
   </footer>
 
 </body>
